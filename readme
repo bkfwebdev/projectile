@@ -1,0 +1,7 @@
+this is a command line node application
+it does projectile motion calculations 
+input format is "node projectile angle initial_velocity"
+output is
+height
+distance
+time in flight
