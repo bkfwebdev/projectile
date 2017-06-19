@@ -1,4 +1,4 @@
-const g = 9.8;
+ const g = 9.8;
 
  function getTime(v,theta){
 	let theTime = ((2 * v * Math.sin(theta))/g);
@@ -24,7 +24,7 @@ console.log("time in flight: ",flightTime);
 function calcArgs(){
 	let myInput = process.argv;
 	let pTheta = parseInt(process.argv.slice(3));
-	pTheta = (pTheta * 180)/3.14;
+	pTheta = pTheta*(Math.PI/180)
 	let pV = parseInt(process.argv.slice(2));
 	let pTime = getTime(pV,pTheta);
 	let pHeight = getHeight(pV,pTheta);
